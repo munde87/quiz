@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // Middlewares
 app.use(cors({
-  origin: ["https://quiz-lyart-omega.vercel.app", "http://localhost:3000"],
+  origin: ["https://quiz-y6xe.vercel.app", "http://localhost:3000"],
   methods: ["GET", "POST"],
   credentials: true
 }));
