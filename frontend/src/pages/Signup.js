@@ -19,7 +19,7 @@ function Signup() {
         if (!name || !email || !password) return handleError('Name, email and password are required');
 
         try {
-            const response = await fetch('https://quiz-api-smoky-one.vercel.app', {
+            const response = await fetch('https://quiz-3gm7.vercel.app', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(signupInfo)
