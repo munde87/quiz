@@ -22,7 +22,7 @@ function Login() {
         if (!email || !password) return handleError('Email and password are required');
 
         try {
-            const response = await fetch('http://localhost:8080/auth/login', {
+            const response = await fetch('https://quiz-api-smoky-one.vercel.app', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(loginInfo)
