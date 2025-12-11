@@ -17,8 +17,11 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch(err => console.log(err));
 
 // Middlewares
-app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({
+  origin: ["https://quiz-lyart-omega.vercel.app", "http://localhost:3000"],
+  methods: ["GET", "POST"],
+  credentials: true
+}));
 
 // Routes
 app.use('/auth', AuthRouter);
